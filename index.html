@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treshan Appuhamy's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#portfolio">Portfolio</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Electrical/Computer Systems Engineer</p>
+            <h1>Hi, I'm <span>Treshan Appuhamy</span><br>from Monash University</h1>
+        </div>
+    </div>
+</div>
+
+<!-- about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Passionate and dedicated Electrical Engineer with a strong foundation in electrical systems and circuit design, bolstered by a Bachelor's degree from Monash University. With one year of hands-on experience in the field, I have developed a keen understanding of industry standards and practices. I am committed to leveraging my technical skills and innovative mindset to contribute effectively to engineering projects and drive technological advancements.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul><li><span>Electrical</span><br>Cable Sizing & Power Distribution</li></ul>
+                    <ul><li><span>Computer Systems</span><br>Programming of Microcontrollers</li></ul>
+                    <ul><li><span>Web Developer</span><br>Web app Development</li></ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul><li><span>Electrical</span><br>Cable Sizing & Power Distribution</li></ul>
+                    <ul><li><span>Computer Systems</span><br>Programming of Microcontrollers</li></ul>
+                    <ul><li><span>Web Developer</span><br>Web app Development</li></ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul><li><span>Electrical</span><br>Cable Sizing & Power Distribution</li></ul>
+                    <ul><li><span>Computer Systems</span><br>Programming of Microcontrollers</li></ul>
+                    <ul><li><span>Web Developer</span><br>Web app Development</li></ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;portfolio&#45;&#45;&#45;&#45;-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work/research.png">
+                <div class="layer">
+                    <h3>Research Project (Monash University)</h3>
+                    <p>An Holistic Approach for Electric Power Cable Sizing, which includes corporate concerns of ESG, return on investment, cable lifespan while providing insights into its preventive maintenance aspects. All these have been the focus point of the financial stakeholders. The Project was done in collaboration with a leading Cable Manufacturer based on Singapore and Malaysia.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work/BLACKPINK.png">
+                <div class="layer">
+                    <h3>Monash Color-Bowl 2023</h3>
+                    <p>An autonomous robot that can transport pucks to a particular region of the competition arena based on the colour of the puck and then use these pucks to knock down bowling-pins through a flicking action. This Robot was built from scratch by design on SOLIDWORKS to 3D printing, Assembly and Automation using C language on PSoC CY8C5888LTI-LP097.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work/ResistCalc.png">
+                <div class="layer">
+                    <h3>Android Resistance Calculator</h3>
+                    <p>ResistCalc is a dedicated application designed for the meticulous decoding of resistor color bands, providing a streamlined approach to ascertain resistor values. Tailored for both electronics professionals and enthusiasts, this application simplifies the identification and comprehension of resistors.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i> </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;contact-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> treshanappuhamy@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/treshanappuhamy"><i class="fab fa-linkedin"></i> </a>
+                    <a href="https://www.github.com/treshanappuhamy"><i class="fab fa-github"></i> </a>
+                    <a href="https://www.twitter.com/treshan_rajinda"><i class="fab fa-twitter-square"></i> </a>
+                </div>
+                <a href="Treshan-CV.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2024 Treshan Appuhamy - All rights reserved</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname){
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrF6lZYm5HVTjfY84wE18sK4rExkHQmhfatExAcf_YhfNcyiBsv-G3MLTeXOy_fkex/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
