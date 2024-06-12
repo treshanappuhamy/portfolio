@@ -339,11 +339,16 @@ form .bt2{
     margin-top: 20px;
 }
 
+.portfolio-image{
+    width: 50%;
+}
+
 /*css for small screen*/
 
 nav .fas{
     display: none;
 }
+
 
 @media only screen and (max-width: 600px) {
     #header{
@@ -415,6 +420,10 @@ nav .fas{
 
     .copyright{
         font-size: 14px;
+    }
+
+    .portfolio-image{
+        width: 100%;
     }
 }
 
