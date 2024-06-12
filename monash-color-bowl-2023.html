@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treshan Appuhamy's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+</head>
+<body>
+
+<div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="index.html">About</a> </li>
+            <li><a href="index.html">Portfolio</a> </li>
+            <li><a href="index.html">Contact</a> </li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+</div>
+
+
+
+
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;portfolio&#45;&#45;&#45;&#45;-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Monash Color-Bowl 2023</h1>
+        <p style="text-align: justify">An autonomous robot that can transport pucks to a particular region of the competition arena based on the colour of the puck and then use these pucks to knock down bowling-pins through a flicking action. This Robot was built from scratch by design on SOLIDWORKS to 3D printing, Assembly and Automation using C language on PSoC CY8C5888LTI-LP097.</p>
+        <img class="portfolio-image" style="max-width: 100%; display: block; margin: 0 auto; align-content: center"; src="images/work/BLACKPINK-2.png">
+        <a href="reports/ECE4191_Final_Report-G14.pdf" class="btn">Project Report</a>
+    </div>
+</div>
+</div>
+
+
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;contact-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> treshanappuhamy@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/treshanappuhamy"><i class="fab fa-linkedin"></i> </a>
+                    <a href="https://www.github.com/treshanappuhamy"><i class="fab fa-github"></i> </a>
+                    <a href="https://www.twitter.com/treshan_rajinda"><i class="fab fa-twitter-square"></i> </a>
+                </div>
+                <a href="Treshan-CV.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2024 Treshan Appuhamy - All rights reserved</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname){
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+</script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrF6lZYm5HVTjfY84wE18sK4rExkHQmhfatExAcf_YhfNcyiBsv-G3MLTeXOy_fkex/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
