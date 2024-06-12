@@ -343,11 +343,19 @@ form .bt2{
     width: 50%;
 }
 
+.iframe{
+    width: 560px;
+    height: 315px;
+
+}
+
 /*css for small screen*/
 
 nav .fas{
     display: none;
 }
+
+
 
 
 @media only screen and (max-width: 600px) {
@@ -425,6 +433,7 @@ nav .fas{
     .portfolio-image{
         width: 100%;
     }
+
 }
 
 #msg{
