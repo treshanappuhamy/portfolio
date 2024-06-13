@@ -349,6 +349,14 @@ form .bt2{
 
 }
 
+/* Share Buttons Container */
+.share-buttons {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+
+
 /*css for small screen*/
 
 nav .fas{
