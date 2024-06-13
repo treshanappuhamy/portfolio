@@ -1,0 +1,19 @@
+# robots.txt file for Treshan Appuhamy's Portfolio
+
+# Allow all web crawlers to index the website
+User-agent: *
+Disallow:
+
+# Block access to specific directories or files
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+Disallow: /private/
+
+# Allow access to specific files
+Allow: /index.html
+Allow: /images/
+Allow: /style.css
+
+# Sitemap location
+Sitemap: https://www.treshan.me/sitemap.xml
