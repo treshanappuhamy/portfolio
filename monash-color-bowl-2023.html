@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
-<body>
+<body class="loading">
 
 <div class="container">
     <nav>
@@ -28,6 +28,14 @@
 
         <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>
+
+    <!--Loading Page-->
+    <div class="loading-page">
+        <div class="name-container">
+            <div class="logo-name">TRESHAN</div>
+        </div>
+    </div>
+    <!--Loading Page Ends-->
 
 </div>
 
@@ -94,6 +102,24 @@
         <p>© 2024 Treshan Appuhamy - All rights reserved</p>
     </div>
 </div>
+
+<script>
+    window.addEventListener('load', function() {
+        document.querySelector('.loading').style.display = 'block'; // Display main content
+        window.scrollTo(0, 0); // Scroll to top when the page is fully loaded
+        window.scrollTo(0, 0); // Scroll to top when the page is fully loaded
+        window.scrollTo(0, 0); // Scroll to top when the page is fully loaded
+        setTimeout(function() {
+            document.body.classList.remove('loading'); // Re-enable scrolling
+            document.querySelector('.container').style.display = 'block'; // Display main content
+            document.querySelector('.loading-page').style.display = 'none'; // Hide loading animation
+        }, 1000); // Adjust the time delay as needed
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./script.js"></script>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
