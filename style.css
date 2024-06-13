@@ -405,6 +405,9 @@ form .bt2{
     font-weight: bolder;
 }
 
+body.loading {
+    overflow: hidden; /* Prevent scrolling */
+}
 
 
 

@@ -11,7 +11,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
-<body>
+<body class="loading">
 
     <div class="container">
         <nav>
@@ -107,12 +107,24 @@
             <div class="logo-name">nullx</div>
         </div>
     </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Simulate loading delay for demonstration (Remove in production)
+        setTimeout(() => {
+            document.body.classList.remove('loading'); // Re-enable scrolling
+            document.querySelector('.container').style.display = 'block'; // Display main content
+            document.querySelector('.loading-page').style.display = 'none'; // Hide loading animation
+        }, 3000); // Adjust the time delay as needed
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
             integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./script.js"></script>
 
-<script>
+
+    <script>
     var tablinks = document.getElementsByClassName("tab-links");
     var tabcontents = document.getElementsByClassName("tab-contents");
 
