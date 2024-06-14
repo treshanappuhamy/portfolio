@@ -1,8 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(10,10,10);
-    color: rgb(240,240,240);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -29,7 +29,7 @@ header {
 .share-button svg {
     margin-left: 12px;
     margin-top: 10px;
-    color: rgb(0,0,0);
+    color: rgb(157, 157, 157);
 }
 
 .container {
@@ -53,7 +53,7 @@ a {
 
 .tile {
     width: 100%;
-    background-color: rgb(37,37,37);
+    background-color: rgb(157, 157, 157);
     margin: 7px;
     border-radius: 17px;
     display: flex;
@@ -70,7 +70,7 @@ a {
     width: 40px;
     height: 40px;
     border-radius: 20px;
-    background-color: rgb(52,52,52);
+    background-color: rgb(157, 157, 157);
 }
 
 .tile-share-button svg {
@@ -80,8 +80,8 @@ a {
 
 
 .image-container {
-    height: 96px;
-    width: 96px;
+    height: 200px;
+    width: 200px;
     border-radius: 48px;
     overflow: hidden;
 }
