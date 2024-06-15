@@ -1,15 +1,14 @@
 body {
-    margin: 0;
-    padding: 0;
     background-image: url('images/loading-background.png');
-    background-size: cover; /* or use other values like contain, auto */
-    background-repeat: no-repeat; /* prevent the image from repeating */
-    background-position: center; /* center the image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    height: 100vh;
     font-family: Verdana, Tahoma, sans-serif;
 }
 
