@@ -360,7 +360,10 @@ form .bt2{
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to right, #ffffff, #8a949d, #8a949d, #8a949d, #ffffff);
+    background-image: url('images/loading-background.png');
+    background-size: cover; /* or use other values like contain, auto */
+    background-repeat: no-repeat; /* prevent the image from repeating */
+    background-position: center; /* center the image */
 
 
     height: 100%;
