@@ -1,0 +1,42 @@
+
+.loading-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('../images/loading-background.png');
+    background-size: cover; /* or use other values like contain, auto */
+    background-repeat: no-repeat; /* prevent the image from repeating */
+    background-position: center; /* center the image */
+
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: #191654;
+
+
+}
+
+.name-container {
+    height: 30px;
+    overflow: hidden;
+    animation: draw 8s ease;
+}
+
+.logo-name {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bolder;
+}
+
+body.loading {
+    overflow: hidden; /* Prevent scrolling */
+}
+
