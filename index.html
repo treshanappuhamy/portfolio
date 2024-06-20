@@ -58,36 +58,45 @@
 
 <body class="loading">
 
+<!-- Cursor element for custom cursor implementation -->
 <div class="cursor">
     <div class="cursor-dot"></div>
     <div class="cursor-circle"></div>
 </div>
 
+<!-- Header section -->
 <div id="header">
     <div class="container">
+        <!-- Navigation bar -->
         <nav>
+            <!-- Logo with link to homepage -->
             <a href="./">
                 <img src="images/logo.png" class="logo" alt="Treshan Appuhamy" loading="eager">
             </a>
+
+            <!-- Side menu for navigation links -->
             <ul id="sidemenu">
-                <li><a href="#header">Home</a> </li>
-                <li><a href="#about">About</a> </li>
-                <li><a href="#portfolio">Portfolio</a> </li>
-                <li><a href="#contact">Contact</a> </li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- Close menu icon for mobile navigation -->
                 <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
 
+            <!-- Hamburger icon for mobile navigation -->
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
 
-<!--Loading Page-->
+        <!-- Loading animation section -->
         <div class="loading-page">
             <div class="name-container">
                 <div class="logo-name">TRESHAN</div>
             </div>
         </div>
-<!--Loading Page Ends-->
 
+        <!-- Header text content -->
         <div class="header-text">
             <p>Electrical/Computer Systems Engineer</p>
             <h1>Hi, I'm <span>Treshan Appuhamy</span><br>from Monash University</h1>
@@ -95,106 +104,178 @@
     </div>
 </div>
 
-<!-- about -->
+
+
+<!-- About section -->
 <div id="about">
     <div class="container">
+        <!-- About Me section -->
         <div class="aboutme">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png" loading="lazy" alt="Treshan Appuhamy">
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Electrical Engineering graduate with expertise in Electrical Energy Systems, Power Systems Fault Analysis, and Control Systems. Skilled in Embedded Systems, IoT, and Computer Architecture. Strong problem-solving abilities and team collaboration skills.</p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+            <div class="row">
+                <!-- Column for profile image -->
+                <div class="about-col-1">
+                    <img src="images/user.png" loading="lazy" alt="Treshan Appuhamy">
                 </div>
 
-                <div class="tab-contents active-tab" id="skills">
-                    <ul><li><span>Electrical</span><br>Cable Sizing & Power Distribution: I excel at determining the right cable sizes for efficient and safe electrical systems, ensuring all designs meet industry standards. My experience includes designing power distribution networks that effectively deliver electricity to end-users.</li></ul>
-                    <ul><li><span>Computer Systems</span><br>Programming of Microcontrollers: I am specialized in writing firmware for microcontrollers, using languages like C and C++ to create reliable and efficient embedded systems. My projects often involve interfacing with sensors, managing real-time data, and optimizing hardware performance.</li></ul>
-                    <ul><li><span>Web Developer</span><br>Web App Development: I enjoy creating dynamic and user-friendly web applications. My skill set includes developing responsive interfaces with HTML, CSS, and JavaScript, and building robust back-end systems with Node.js to handle data and server logic.</li></ul>
+                <!-- Column for biography and tabs -->
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Electrical Engineering graduate with expertise in Electrical Energy Systems, Power Systems Fault Analysis, and Control Systems. Skilled in Embedded Systems, IoT, and Computer Architecture. Strong problem-solving abilities and team collaboration skills.
+                    </p>
+
+                    <!-- Tab titles for switching content -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <!-- Tab content for Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Electrical</span><br>
+                                Cable Sizing & Power Distribution: I excel at determining the right cable sizes for efficient and safe electrical systems, ensuring all designs meet industry standards. My experience includes designing power distribution networks that effectively deliver electricity to end-users.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Computer Systems</span><br>
+                                Programming of Microcontrollers: I am specialized in writing firmware for microcontrollers, using languages like C and C++ to create reliable and efficient embedded systems. My projects often involve interfacing with sensors, managing real-time data, and optimizing hardware performance.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Web Developer</span><br>
+                                Web App Development: I enjoy creating dynamic and user-friendly web applications. My skill set includes developing responsive interfaces with HTML, CSS, and JavaScript, and building robust back-end systems with Node.js to handle data and server logic.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab content for Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Virtual Intern</span><br>
+                                Jun 2023 - Jun 2023<br>
+                                Selangor, Malaysia · Remote<br>
+                                This project at Deloitte Risk Advisory is centered around Model Risk Management for the Financial Services Industry, focusing on developing credit risk and climate risk models using industry and client-specific data.
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Electrical Engineering Intern</span><br>
+                                Nov 2022 - Feb 2023<br>
+                                Shah Alam, Selangor, Malaysia · On-site<br>
+                                During my industrial internship at Malaysian Smart Factory 4.0 by SHRDC, I gained valuable hands-on experience in a wide range of industrial applications, including LiDAR sensor technologies, PLCs, robots, the Internet of Things, and MQTT communication. Working on various projects, I set up and configured systems, tested software and hardware elements, and developed Node-RED flows to manage and display data. I had the opportunity to work with cutting-edge technologies like R2000 LiDAR sensors, SCUTTLE robots, Siemens PLCs, and more. Additionally, I gained proficiency in using software tools like PACTware, MQTT, ERPNext, and ROS. This internship has equipped me with comprehensive knowledge of industrial applications and technology, and I look forward to applying these skills in my future career.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Tab content for Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>Monash University</span><br>
+                                Bachelor of Engineering (Honours), Electrical and Computer Systems Engineering<br>
+                                2021 - 2024
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Monash College</span><br>
+                                Monash College Diploma, Engineering<br>
+                                2019-2020
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>Gateway College</span><br>
+                                Edexcel International Advanced Level, Mathematics<br>
+                                2017 - 2019
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="tab-contents" id="experience">
-                    <ul><li><span>Virtual Intern</span><br>Jun 2023 - Jun 2023<br>Selangor, Malaysia · Remote<br>This project at Deloitte Risk Advisory is centered around Model Risk Management for the Financial Services Industry, focusing on developing credit risk and climate risk models using industry and client-specific data.</li></ul>
-                    <ul><li><span>Electrical Engineering Intern</span><br>Nov 2022 - Feb 2023<br>Shah Alam, Selangor, Malaysia · On-site<br>During my industrial internship at Malaysian Smart Factory 4.0 by SHRDC, I gained valuable hands-on experience in a wide range of industrial applications, including LiDAR sensor technologies, PLCs, robots, the Internet of Things, and MQTT communication. Working on various projects, I set up and configured systems, tested software and hardware elements, and developed Node-RED flows to manage and display data. I had the opportunity to work with cutting-edge technologies like R2000 LiDAR sensors, SCUTTLE robots, Siemens PLCs, and more. Additionally, I gained proficiency in using software tools like PACTware, MQTT, ERPNext, and ROS. This internship has equipped me with comprehensive knowledge of industrial applications and technology, and I look forward to applying these skills in my future career.</li></ul>
-
-                </div>
-
-                <div class="tab-contents" id="education">
-                    <ul><li><span>Monash University</span><br>Bachelor of Engineering (Honours), Electrical and Computer Systems Engineering<br>2021 - 2024</li></ul>
-                    <ul><li><span>Monash College</span><br>Monash College Diploma, Engineering<br>2019-2020</li></ul>
-                    <ul><li><span>Gateway College</span><br>Edexcel International Advanced Level, Mathematics<br>2017 - 2019</li></ul>
-                </div>
-
             </div>
         </div>
     </div>
 </div>
 
 
-<!-- -&#45;&#45;&#45;&#45;&#45;&#45;portfolio&#45;&#45;&#45;&#45;-->
 
-<div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work/research.png" loading="lazy" alt="Treshan Appuhamy">
-                <div class="layer">
-                    <h3></h3>
-                    <p></p>
-                    <a href="research-project.html"><i class="fas fa-external-link-alt"></i></a>
+    <!-- Portfolio section -->
+    <div id="portfolio">
+        <div class="container">
+            <!-- Section title -->
+            <h1 class="sub-title">My Work</h1>
+
+            <!-- List of work items -->
+            <div class="work-list">
+                <!-- Individual work item -->
+                <div class="work">
+                    <img src="images/work/research.png" loading="lazy" alt="Treshan Appuhamy">
+                    <div class="layer">
+                        <h3></h3> <!-- Project title (to be filled) -->
+                        <p></p> <!-- Project description (to be filled) -->
+                        <a href="research-project.html"><i class="fas fa-external-link-alt"></i></a> <!-- Link to project -->
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work/BLACKPINK.png" loading="lazy" alt="Treshan Appuhamy">
+                    <div class="layer">
+                        <h3></h3> <!-- Project title (to be filled) -->
+                        <p></p> <!-- Project description (to be filled) -->
+                        <a href="monash-color-bowl-2023.html"><i class="fas fa-external-link-alt"></i></a> <!-- Link to project -->
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work/ResistCalc.png" loading="lazy" alt="Treshan Appuhamy">
+                    <div class="layer">
+                        <h3></h3> <!-- Project title (to be filled) -->
+                        <p></p> <!-- Project description (to be filled) -->
+                        <a href="android-resistcalc.html"><i class="fas fa-external-link-alt"></i></a> <!-- Link to project -->
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work/hrm.png" loading="lazy" alt="Treshan Appuhamy">
+                    <div class="layer">
+                        <h3></h3> <!-- Project title (to be filled) -->
+                        <p></p> <!-- Project description (to be filled) -->
+                        <a href="heart-rate-monitor.html"><i class="fas fa-external-link-alt"></i></a> <!-- Link to project -->
+                    </div>
                 </div>
             </div>
-            <div class="work">
-                <img src="images/work/BLACKPINK.png" loading="lazy" alt="Treshan Appuhamy">
-                <div class="layer">
-                    <h3></h3>
-                    <p></p>
-                    <a href="monash-color-bowl-2023.html"><i class="fas fa-external-link-alt"></i> </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work/ResistCalc.png" loading="lazy" alt="Treshan Appuhamy">
-                <div class="layer">
-                    <h3></h3>
-                    <p></p>
-                    <a href="android-resistcalc.html"><i class="fas fa-external-link-alt"></i> </a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work/hrm.png" loading="lazy" alt="Treshan Appuhamy">
-                <div class="layer">
-                    <h3></h3>
-                    <p></p>
-                    <a href="heart-rate-monitor.html"><i class="fas fa-external-link-alt"></i> </a>
-                </div>
-            </div>
+
+            <!-- Link to view more projects -->
+            <a href="projects.html" class="btn">See more</a>
         </div>
-        <a href="projects.html" class="btn">See more</a>
     </div>
-    </div>
-</div>
 
 
-<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;contact-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!-- Contact section -->
 <div id="contact">
     <div class="container">
         <div class="row">
+            <!-- Left section with contact information -->
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fas fa-paper-plane"></i> treshanappuhamy@gmail.com</p>
+                <!-- Social media icons -->
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/treshanappuhamy"><i class="fab fa-linkedin"></i> </a>
                     <a href="https://www.github.com/treshanappuhamy"><i class="fab fa-github"></i> </a>
                     <a href="https://www.twitter.com/treshan_rajinda"><i class="fab fa-twitter-square"></i> </a>
                 </div>
+                <!-- Button to download CV -->
                 <a href="Treshan-CV.pdf" class="btn btn2">Download CV</a>
             </div>
+
+            <!-- Right section with contact form -->
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
@@ -202,16 +283,17 @@
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
+                <!-- Span for displaying form submission messages -->
                 <span id="msg"></span>
             </div>
         </div>
     </div>
-
-    <div class="copyright">
-        <p>© 2024 Treshan Appuhamy - All rights reserved</p>
-    </div>
 </div>
 
+<!-- Copyright information -->
+<div class="copyright">
+    <p>© 2024 Treshan Appuhamy - All rights reserved</p>
+</div>
 
 <!-- Loading spinner script -->
 <script src="scripts/loading.js"></script>
