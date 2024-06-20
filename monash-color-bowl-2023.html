@@ -14,41 +14,46 @@
 <body class="loading">
 
 <div class="container">
+    <!-- Navigation Bar -->
     <nav>
+        <!-- Logo Link -->
         <a href="./">
             <img src="images/logo.png" class="logo" alt="Treshan Appuhamy" loading="eager">
         </a>
+
+        <!-- Side Menu Links -->
         <ul id="sidemenu">
-            <li><a href="./">Home</a> </li>
-            <li><a href="./">About</a> </li>
-            <li><a href="#contact">Contact</a> </li>
+            <li><a href="./">Home</a></li>
+            <li><a href="./">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Close Menu Icon (not visible unless the menu is open) -->
             <i class="fas fa-times" onclick="closemenu()"></i>
         </ul>
 
+        <!-- Hamburger Menu Icon (visible on small screens) -->
         <i class="fas fa-bars" onclick="openmenu()"></i>
     </nav>
 
-    <!--Loading Page-->
+    <!-- Loading Page -->
     <div class="loading-page">
         <div class="name-container">
             <div class="logo-name">TRESHAN</div>
         </div>
     </div>
-    <!--Loading Page Ends-->
-
 </div>
 
-
-
-
-
-<!-- -&#45;&#45;&#45;&#45;&#45;&#45;portfolio&#45;&#45;&#45;&#45;-->
-
 <div id="portfolio" style="margin-bottom: -80px">
+    <!-- Portfolio Section -->
     <div class="container">
+        <!-- Title -->
         <h1 class="sub-title">Monash Color-Bowl 2023</h1>
-        <p style="text-align: justify">An autonomous robot that can transport pucks to a particular region of the competition arena based on the colour of the puck and then use these pucks to knock down bowling-pins through a flicking action. This Robot was built from scratch by design on SOLIDWORKS to 3D printing, Assembly and Automation using C language on PSoC CY8C5888LTI-LP097.</p>
-        <img class="portfolio-image" style="max-width: 100%; display: block; margin: 0 auto; align-content: center"; src="images/work/BLACKPINK-2.png" loading="lazy" alt="Treshan Appuhamy">
+        <!-- Description -->
+        <p style="text-align: justify">
+            An autonomous robot that can transport pucks to a particular region of the competition arena based on the colour of the puck and then use these pucks to knock down bowling-pins through a flicking action. This Robot was built from scratch by design on SOLIDWORKS to 3D printing, Assembly and Automation using C language on PSoC CY8C5888LTI-LP097.
+        </p>
+        <!-- Image -->
+        <img class="portfolio-image" style="max-width: 100%; display: block; margin: 0 auto; align-content: center" src="images/work/BLACKPINK-2.png" loading="lazy" alt="Treshan Appuhamy">
+        <!-- Button to Project Report -->
         <a href="reports/ECE4191_Final_Report-G14.pdf" class="btn">Project Report</a>
     </div>
 </div>
