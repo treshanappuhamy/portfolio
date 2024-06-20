@@ -20,44 +20,56 @@
 
 <body class="loading">
 
+<div class="container">
+    <!-- Main container for the navigation bar -->
+    <nav>
+        <!-- Logo or brand link -->
+        <a href="./">
+            <img src="images/logo.png" class="logo" alt="Treshan Appuhamy" loading="eager">
+        </a>
+
+        <!-- Side menu (for mobile or hidden menu) -->
+        <ul id="sidemenu">
+            <li><a href="./">Home</a></li>
+            <li><a href="./">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <!-- Close menu icon (for mobile view) -->
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+
+        <!-- Hamburger menu icon (for mobile view) -->
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+</div>
 
 
-    <div class="container">
-        <nav>
-            <a href="./">
-                <img src="images/logo.png" class="logo" alt="Treshan Appuhamy" loading="eager">
-            </a>
-            <ul id="sidemenu">
-                <li><a href="./">Home</a> </li>
-                <li><a href="./">About</a> </li>
-                <li><a href="#contact">Contact</a> </li>
-                <i class="fas fa-times" onclick="closemenu()"></i>
-            </ul>
-
-            <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-
-    </div>
-
-
-    <!--Loading Page-->
     <div class="loading-page">
+        <!-- Loading page container -->
         <div class="name-container">
+            <!-- Container for the name/logo -->
             <div class="logo-name">TRESHAN</div>
         </div>
     </div>
-    <!--Loading Page Ends-->
-
-    <!-- -&#45;&#45;&#45;&#45;&#45;&#45;portfolio&#45;&#45;&#45;&#45;-->
 
     <div id="portfolio" style="margin-bottom: -80px">
+        <!-- Portfolio section -->
         <div class="container">
+            <!-- Title of the portfolio project -->
             <h1 class="sub-title">Holistic Approach for Electric Power Cable Sizing</h1>
-            <p style="text-align: justify">An Holistic Approach for Electric Power Cable Sizing, which includes corporate concerns of ESG, return on investment, cable lifespan while providing insights into its preventive maintenance aspects. All these have been the focus point of the financial stakeholders. The Project was done in collaboration with a leading Cable Manufacturer based on Singapore and Malaysia.</p>
-            <img class="portfolio-image" style="max-width: 100%; display: block; margin: 0 auto; align-content: center"; src="images/work/research-methodology.png" loading="lazy" alt="Treshan Appuhamy">
+
+            <!-- Description of the project -->
+            <p style="text-align: justify">
+                An Holistic Approach for Electric Power Cable Sizing, which includes corporate concerns of ESG, return on investment, cable lifespan while providing insights into its preventive maintenance aspects. All these have been the focus point of the financial stakeholders. The Project was done in collaboration with a leading Cable Manufacturer based on Singapore and Malaysia.
+            </p>
+
+            <!-- Image related to the project -->
+            <img class="portfolio-image" style="max-width: 100%; display: block; margin: 0 auto; align-content: center" src="images/work/research-methodology.png" loading="lazy" alt="Treshan Appuhamy">
+
+            <!-- Link to download project report -->
             <a href="https://drive.google.com/file/d/1zNMdLyEhbErrgKKydFl7Ocxt84CPYePe/view?usp=sharing" class="btn">Project Report</a>
         </div>
     </div>
+
 
     <div class="share-buttons">
         <div class="social-icons" style="margin-top: -20px">
@@ -65,16 +77,19 @@
             <a style="color: #080808; margin-bottom: 5px;" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftreshan.me/research-project.html" target="_blank" class="share-btn facebook">
                 <i class="fab fa-facebook"></i> Share on Facebook
             </a>
+
             <!-- Twitter Share Button -->
             <a style="color: #080808; margin-bottom: 5px;" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftreshan.me/research-project.html&text=Check%20out%20this%20website!" target="_blank" class="share-btn twitter">
                 <i class="fab fa-twitter"></i> Share on Twitter
             </a>
+
             <!-- LinkedIn Share Button -->
             <a style="color: #080808; margin-bottom: 5px;" href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Ftreshan.me/research-project.html&title=Treshan's%20Portfolio" target="_blank" class="share-btn linkedin">
                 <i class="fab fa-linkedin"></i> Share on LinkedIn
             </a>
         </div>
     </div>
+
 
 
     <!-- Contact section -->
