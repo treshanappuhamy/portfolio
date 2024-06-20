@@ -270,6 +270,7 @@ nav ul li a:hover::after{
 }
 
 .btn:hover{
+    border: 0px solid #ff004f;
     background: #ff004f;
     transform: scale(1.1); /* Scale up the button on hover */
 }
@@ -309,8 +310,16 @@ nav ul li a:hover::after{
 }
 
 .social-icons a:hover{
-    color: #ff004f;
     transform: translateY(-5px);
+}
+.linkedin:hover{
+    color: #1166c2;
+}
+.github:hover{
+    color: #000000;
+}
+.twitter:hover{
+    color: #1fa1f3;
 }
 
 .btn.btn2{
@@ -323,8 +332,6 @@ nav ul li a:hover::after{
     background: rgba(255, 0, 79, 0.75);
     transform: scale(1.1); /* Scale up the button on hover */
 }
-
-
 
 .contact-right form{
     width: 100%;

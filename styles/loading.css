@@ -1,13 +1,14 @@
 
+
 .loading-page {
     position: absolute;
     top: 0;
     left: 0;
     background-image: url('../images/loading-background.png');
-    background-size: cover; /* or use other values like contain, auto */
-    background-repeat: no-repeat; /* prevent the image from repeating */
-    background-position: center; /* center the image */
-
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the background image */
+    transition: transform 0.5s; /* Adds a smooth transition for transformations */
 
     height: 100%;
     width: 100%;
@@ -21,6 +22,7 @@
 
 
 }
+
 
 .name-container {
     height: 30px;
