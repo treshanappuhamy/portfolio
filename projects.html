@@ -153,25 +153,11 @@
 </script>
 
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrF6lZYm5HVTjfY84wE18sK4rExkHQmhfatExAcf_YhfNcyiBsv-G3MLTeXOy_fkex/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+<script src="form.js"></script>
 
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Message sent successfully"
-                setTimeout(function (){
-                    msg.innerHTML = ""
-                }, 5000)
-                form.reset()
-
-            })
-            .catch(error => console.error('Error!', error.message))
-    })
-</script>
+<script src="cursor.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
 
 </body>
 </html>
