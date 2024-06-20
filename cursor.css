@@ -1,0 +1,24 @@
+.cursor-dot,
+.cursor-circle {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+    -webkit-user-select: none; /* For older versions of Safari/Chrome */
+    -moz-user-select: none; /* For older versions of Firefox */
+}
+
+.cursor-dot {
+    width: 6px;
+    height: 6px;
+    background-color: #000000;
+    border-radius: 50%;
+}
+
+.cursor-circle {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}

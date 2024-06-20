@@ -62,11 +62,19 @@
 
     <!-- CSS and Fonts -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cursor.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 
 <body class="loading">
+
+<div class="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+</div>
+
 <div id="header">
     <div class="container">
         <nav>
@@ -288,6 +296,11 @@
             .catch(error => console.error('Error!', error.message))
     })
 </script>
+
+<script src="cursor-script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+
 
 </body>
 </html>
