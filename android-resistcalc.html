@@ -11,52 +11,65 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
 </head>
+
 <body class="loading">
 
 <div class="container">
+    <!-- Container for the entire navigation and loading page -->
     <nav>
+        <!-- Navigation section -->
         <a href="./">
             <img src="images/logo.png" class="logo" alt="Treshan Appuhamy" loading="eager">
+            <!-- Logo with eager loading for faster display -->
         </a>
         <ul id="sidemenu">
-            <li><a href="./">Home</a> </li>
-            <li><a href="./">About</a> </li>
-            <li><a href="#contact">Contact</a> </li>
+            <!-- Side menu list -->
+            <li><a href="./">Home</a></li>
+            <!-- Home link -->
+            <li><a href="./">About</a></li>
+            <!-- About link -->
+            <li><a href="#contact">Contact</a></li>
+            <!-- Contact link -->
             <i class="fas fa-times" onclick="closemenu()"></i>
+            <!-- Close menu icon, likely for mobile menu -->
         </ul>
 
         <i class="fas fa-bars" onclick="openmenu()"></i>
+        <!-- Hamburger menu icon to open menu, likely for mobile -->
     </nav>
 
-    <!--Loading Page-->
     <div class="loading-page">
+        <!-- Loading page section -->
         <div class="name-container">
+            <!-- Container for name/logo during loading -->
             <div class="logo-name">TRESHAN</div>
+            <!-- Name/logo displayed during loading -->
         </div>
     </div>
-    <!--Loading Page Ends-->
-
 </div>
 
-
-
-
-
-<!-- -&#45;&#45;&#45;&#45;&#45;&#45;portfolio&#45;&#45;&#45;&#45;-->
-
 <div id="portfolio" style="margin-bottom: -80px">
+    <!-- Portfolio section with negative margin-bottom for spacing adjustment -->
     <div class="container">
+        <!-- Container for content -->
         <h1 class="sub-title">Android Resistance Calculator</h1>
+        <!-- Project title -->
         <p style="text-align: justify">
+            <!-- Project description paragraph with justified text alignment -->
             ResistCalc is a dedicated application designed for the meticulous decoding of resistor color bands, providing a streamlined approach to ascertain resistor values. Tailored for both electronics professionals and enthusiasts, this application simplifies the identification and comprehension of resistors.
             <a href="https://drive.google.com/drive/folders/1cXKwqoMfw-gDFtYdT3dU19vkK8gXkn41?usp=sharing">Download APK</a>
+            <!-- Link to download APK -->
         </p>
-        <img class="portfolio-image" style="max-width: 100%; display: block; margin: 0 auto; align-content: center"; src="images/work/ResistCalc-2.png" loading="lazy" alt="Treshan Appuhamy">
+        <img class="portfolio-image" style="max-width: 100%; display: block; margin: 0 auto; align-content: center" src="images/work/ResistCalc-2.png" loading="lazy" alt="Treshan Appuhamy">
+        <!-- Project image with styling for centering and maximum width -->
         <a href="https://youtu.be/l8XhD3wbgFc" class="btn">Demo Video</a>
+        <!-- Link to demo video with a button style -->
     </div>
 </div>
 
+
 <div class="share-buttons">
+    <!-- Container for social media icons -->
     <div class="social-icons" style="margin-top: -20px">
         <!-- Facebook Share Button -->
         <a style="color: #080808; margin-bottom: 5px;" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftreshan.me/android-resistcalc.html" target="_blank" class="share-btn facebook">
@@ -72,9 +85,6 @@
         </a>
     </div>
 </div>
-
-
-
 
 <!-- Contact section -->
 <div id="contact">
