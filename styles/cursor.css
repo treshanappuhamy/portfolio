@@ -1,12 +1,23 @@
+/* Cursor element for custom cursor implementation */
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it's above most content */
+    pointer-events: none; /* Allows clicks to pass through cursor elements */
+}
+
 .cursor-dot,
 .cursor-circle {
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     transform: translate(-50%, -50%);
     user-select: none;
     -webkit-user-select: none; /* For older versions of Safari/Chrome */
     -moz-user-select: none; /* For older versions of Firefox */
+    pointer-events: auto; /* Enable cursor elements to receive mouse events */
+    z-index: -2; /* Make sure cursor is above other elements */
 }
 
 .cursor-dot {
