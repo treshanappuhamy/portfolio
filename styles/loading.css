@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     color: #191654;
+    z-index: 10;
 
 
 }
