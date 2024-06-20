@@ -22,3 +22,11 @@
     border: 2px solid #000000;
     border-radius: 50%;
 }
+
+/* Media query to disable custom cursor for touch devices */
+@media (pointer: coarse) {
+    .cursor-dot,
+    .cursor-circle {
+        display: none; /* Hide the custom cursor elements */
+    }
+}
