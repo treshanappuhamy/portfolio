@@ -1,0 +1,35 @@
+.contact-right {
+    position: relative;
+}
+
+.msg-and-indicator {
+    display: flex; /* Display as flex to keep items inline */
+    align-items: center; /* Align items vertically */
+}
+
+#msg {
+    padding-right: 10px; /* Add spacing between message and indicator */
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.sending-indicator {
+    display: none;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.sending-indicator .loader {
+    border: 4px solid rgba(255, 0, 79, 0.2);
+    border-top: 4px solid rgba(255, 0, 79, 0.75);
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    margin-right: 5px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

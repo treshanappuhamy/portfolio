@@ -31,7 +31,13 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    transition: transform 0.3s ease; /* Add smooth transition for scaling effect */
 }
+
+nav ul li:hover{
+    transform: scale(1.1); /* Scale up the button on hover */
+}
+
 
 .logo{
     width: 140px;
@@ -43,6 +49,7 @@ nav ul li{
     list-style: none;
     margin: 10px 20px;
 }
+
 
 nav ul li a{
     color: #080808;
