@@ -110,10 +110,18 @@
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
+                    <!-- Combined container for message and sending indicator -->
+                    <div class="msg-and-indicator" style="margin-bottom: 5px">
+                        <!-- Span for displaying form submission messages -->
+                        <span id="msg"></span>
+                        <!-- Sending indicator -->
+                        <div class="sending-indicator">
+                            <div class="loader"></div>
+                            <p>Sending...</p>
+                        </div>
+                    </div>
+                    <div><button style="margin-top: -15px" type="submit" class="btn btn2">Submit</button></div>
                 </form>
-                <!-- Span for displaying form submission messages -->
-                <span id="msg"></span>
             </div>
         </div>
     </div>
