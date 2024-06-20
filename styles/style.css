@@ -41,7 +41,10 @@ nav ul li:hover{
 
 .logo{
     width: 140px;
-
+    transition: transform 0.3s ease; /* Add smooth transition for scaling effect */
+}
+.logo:hover{
+    transform: scale(1.1); /* Scale up the button on hover */
 }
 
 nav ul li{
@@ -393,8 +396,6 @@ form .bt2{
 
 
 }
-
-
 
 .name-container {
     height: 30px;
