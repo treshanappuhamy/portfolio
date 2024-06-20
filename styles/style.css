@@ -141,6 +141,11 @@ nav ul li a:hover::after{
     font-weight: bold;
     cursor: pointer;
     position: relative;
+    transition: transform 0.5s ease; /* Add smooth transition for scaling effect */
+}
+
+.tab-links:hover{
+    transform: scale(1.1); /* Scale up the button on hover */
 }
 
 .tab-links::after{
@@ -368,6 +373,7 @@ form .bt2{
 
 .portfolio-image{
     width: 50%;
+    border-radius: 10px;
 }
 
 .iframe{
