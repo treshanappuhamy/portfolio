@@ -12,6 +12,7 @@ html{
 body{
     background: #fff;
     color: #080808;
+    scroll-behavior: smooth;
 }
 
 #header{
