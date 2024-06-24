@@ -1,0 +1,10 @@
+@media screen and (max-width: 933px) and (orientation: landscape) {
+    .header-text{
+        margin-top: 20%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+}
