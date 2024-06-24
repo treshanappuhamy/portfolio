@@ -404,7 +404,7 @@ nav .fas{
 
 
 
-@media only screen and (max-width: 600px) and (orientation: landscape) {
+@media only screen and (max-width: 600px) {
     #header{
         background-image: url("../images/phone-background.png");
     }
