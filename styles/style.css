@@ -87,7 +87,7 @@ nav ul li a:hover::after{
 .header-text h1 {
     font-size: 60px;
     margin-top: 20px;
-    display: flex;
+
     
 }
 
@@ -131,7 +131,6 @@ nav ul li a:hover::after{
     font-size: 45px;
     font-weight: 600;
     color: #080808;
-    display: flex;
 }
 
 .tab-titles{
@@ -452,7 +451,6 @@ nav .fas{
     }
 
     .sub-title{
-        display: inline-block;
         font-size: 23px;
     }
 
