@@ -118,7 +118,11 @@
 
 <!-- Copyright information -->
 <div class="copyright">
-    <p>© 2024 Treshan Appuhamy - All rights reserved</p>
+    <p>© <span id="year"></span> Treshan Appuhamy - All rights reserved</p>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script
 
 <div id="last-updated">
         Loading...
